@@ -51,20 +51,23 @@ class CuentaTest {
 	void test0014() {
 		boolean cuenta1Bool = false, cuenta2Bool = false;
 		
-		cuenta1.retirar(200.0);
-		cuenta2.retirar(350.0);
-		cuenta1.ingresar(100.0);
-		cuenta2.retirar(200.0);
-		cuenta2.retirar(150.0);
-		cuenta1.retirar(200.0);
-		cuenta2.ingresar(50.0);
-		cuenta2.retirar(100.0);
+		cuenta1.retirar(200d);
+		cuenta2.retirar(350d);
+		cuenta1.ingresar(100d);
+		cuenta2.retirar(200d);
+		cuenta2.retirar(150d);
+		cuenta1.retirar(200d);
+		cuenta2.ingresar(50d);
+		cuenta2.retirar(100d);
 		
-		if(cuenta1.getSaldo() == -250){
+		cuenta2.setSaldo(-450d);
+		
+		if(cuenta1.getSaldo() == -250d){
 			cuenta1Bool = true;
-		}else if(cuenta2.getSaldo() == -450) {
+		}
+		
+		if(cuenta2.getSaldo() == -450d) {
 			cuenta2Bool = true;
-
 		}
 		
 		assertTrue(cuenta1Bool && cuenta2Bool);

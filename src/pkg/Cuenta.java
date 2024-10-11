@@ -13,14 +13,25 @@ public class Cuenta {
 	public double getSaldo() {
 		return saldo;
 	}
-
+	
+	public void setSaldo(double s) {
+		this.saldo = s;
+	}
+	
 	public void ingresar(double d) {
 		saldo += d;
 		
 	}
 
 	public void retirar(double d) {
+		
+		/*if((saldo - d) < -500) {
+			System.out.println("Fondos insuficientes (saldo " + saldo + "€) "
+					+ "en la cuenta " + numero + " para el reintegro de " + d + "€∫" );
+		}else {saldo -= d;}*/
+		
 		saldo -= d;
+		
 	}
 	
 
