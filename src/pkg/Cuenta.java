@@ -17,4 +17,8 @@ public class Cuenta {
 		
 	}
 
+	public void retirar(double d) {
+		saldo -= d;
+	}
+
 }

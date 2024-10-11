@@ -13,11 +13,11 @@ import pkg.Cuenta;
 
 class CuentaTest {
 	
-	static Cuenta cuenta;
+	Cuenta cuenta;
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		cuenta = new Cuenta(0d);
+		
 	}
 
 	@AfterAll
@@ -26,6 +26,7 @@ class CuentaTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		cuenta = new Cuenta(0d);
 	}
 
 	@AfterEach
