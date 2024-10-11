@@ -9,11 +9,11 @@ public class Cuenta {
 	}
 	
 	public double getSaldo() {
-		return 1;
+		return saldo;
 	}
 
 	public void ingresar(double d) {
-		
+		saldo += d;
 		
 	}
 

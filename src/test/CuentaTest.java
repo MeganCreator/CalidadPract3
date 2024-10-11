@@ -38,9 +38,5 @@ class CuentaTest {
 		assertEquals(1, cuenta.getSaldo());
 	}
 	
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
 
 }
