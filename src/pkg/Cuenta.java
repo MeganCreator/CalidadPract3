@@ -3,8 +3,10 @@ package pkg;
 public class Cuenta {
 	
 	private double saldo;
+	private String numero;
 	
-	public Cuenta(double saldo) {
+	public Cuenta(String numero, double saldo) {
+		this.numero = numero;
 		this.saldo = saldo;
 	}
 	
@@ -20,5 +22,6 @@ public class Cuenta {
 	public void retirar(double d) {
 		saldo -= d;
 	}
+	
 
 }
